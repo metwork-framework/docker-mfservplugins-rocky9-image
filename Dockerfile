@@ -27,6 +27,7 @@ metadata_expire=0\n" >/etc/yum.repos.d/metwork.repo
 
 RUN yum clean all
 RUN yum -y install metwork-mfserv-full langpacks-fr
+RUN yum -y install metwork-mfext-layer-python3_scientific_core metwork-mfext-layer-python3_devtools
 RUN yum -y install initscripts vim coreutils-common cronie make
 
 COPY root /
